@@ -8,7 +8,7 @@ public class AfishaManager {
 
    // конструкторы
     public AfishaManager(){
-        this.limit = 1;
+        this.limit = 10;
     }
     public AfishaManager(int limit) {
         this.limit = limit;
@@ -31,7 +31,6 @@ public class AfishaManager {
     // метод вывод всех ильмов в порядке добавления
     public String[] findAll() {
         return movies;
-
 
     }
 
