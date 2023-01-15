@@ -5,16 +5,14 @@ public class AfishaManager {
     private int limit;
 
 
-
-   // конструкторы
-    public AfishaManager(){
+    // конструкторы
+    public AfishaManager() {
         this.limit = 10;
     }
+
     public AfishaManager(int limit) {
         this.limit = limit;
     }
-
-
 
 
     // метод добавления фильмов
@@ -38,16 +36,16 @@ public class AfishaManager {
     // метод вывод максимума ильмов в обратном порядке добавления
     public String[] findLast() {
         int resultLength;
-        if (movies.length < limit){
+        if (movies.length < limit) {
             resultLength = movies.length;
-        }else {
+        } else {
             resultLength = limit;
         }
 
 
         String[] tmp = new String[resultLength];
         for (int i = 0; i < tmp.length; i++) {
-            tmp[i] = movies[movies.length - 1-i];
+            tmp[i] = movies[movies.length - 1 - i];
         }
         return tmp;
     }
