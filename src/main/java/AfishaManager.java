@@ -36,6 +36,7 @@ public class AfishaManager {
     // метод вывод максимума ильмов в обратном порядке добавления
     public String[] findLast() {
         int resultLength;
+
         if (movies.length < limit) {
             resultLength = movies.length;
         } else {
